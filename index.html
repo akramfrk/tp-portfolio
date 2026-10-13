@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Akram FERKIOUI, full-stack developer and AI and Software Engineering student at ENSTA Algiers.">
+  <title>Akram FERKIOUI | Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">akram<span>.</span></a>
+
+      <nav id="menu" class="menu">
+        <a href="#stack">Tech Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+          <span id="themeIcon">☾</span>
+        </button>
+        <button id="menuToggle" class="icon-btn menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="eyebrow">Turning coffee into clean code</p>
+        <h1>Hi, I'm <span class="accent">Akram FERKIOUI</span></h1>
+        <p class="role">Full-Stack Developer · AI &amp; Software Engineering Student</p>
+        <p class="lead">
+          I build reliable web applications across the frontend and backend with
+          TypeScript, React, Next.js, Node.js and PostgreSQL. I study at ENSTA,
+          Algeria, and I'm exploring AI engineering with LLMs and agents.
+        </p>
+        <div class="hero-buttons">
+          <a href="#stack" class="btn btn-primary">See what I do</a>
+          <a href="#contact" class="btn btn-outline">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section">
+      <div class="container">
+        <h2>My Tech Stack</h2>
+        <p class="subtitle">The tools I use and learn with</p>
+        <div id="filters" class="filters"></div>
+        <div id="techGrid" class="tech-grid"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="subtitle">A few things I built while learning</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Task Manager</h3>
+            <p>A to-do app with add, complete and delete actions, saved in the browser.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a href="#" class="card-link">View project →</a>
+          </article>
+          <article class="card">
+            <h3>Weather Dashboard</h3>
+            <p>Search a city and see the current weather using a public API.</p>
+            <ul class="tags"><li>JavaScript</li><li>REST API</li></ul>
+            <a href="#" class="card-link">View project →</a>
+          </article>
+          <article class="card">
+            <h3>Personal Blog</h3>
+            <p>A small blog to write about what I learn, one post at a time.</p>
+            <ul class="tags"><li>React</li><li>Next.js</li></ul>
+            <a href="#" class="card-link">View project →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <div>
+          <h2>About Me</h2>
+          <p>
+            I'm an Artificial Intelligence and Software Engineering student at
+            ENSTA Algiers. I like building things end to end, from the interface
+            to the database, and I care about code that stays readable.
+          </p>
+          <p>
+            Right now I'm focused on TypeScript and the web ecosystem around it,
+            while exploring systems built on LLMs and agents.
+          </p>
+        </div>
+        <ul class="stats">
+          <li><strong id="statTech">0</strong><span>Technologies</span></li>
+          <li><strong>1</strong><span>Week of learning</span></li>
+          <li><strong>∞</strong><span>Cups of coffee</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container contact">
+        <div>
+          <h2>Get in touch</h2>
+          <p class="subtitle">Have a question or an idea? Send me a message.</p>
+          <p><a href="mailto:akramferkioui.contact@gmail.com">akramferkioui.contact@gmail.com</a></p>
+          <div class="socials">
+            <a href="https://github.com/akramfrk" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/ferkioui-akram/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/ferkioui.akram/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <label>Name
+            <input type="text" id="name" placeholder="Your name">
+          </label>
+          <label>Email
+            <input type="email" id="email" placeholder="you@example.com">
+          </label>
+          <label>Message
+            <textarea id="message" rows="4" placeholder="Your message"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p id="formStatus" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Akram FERKIOUI. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <button id="topBtn" class="top-btn" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
